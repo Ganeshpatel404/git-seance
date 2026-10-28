@@ -1,0 +1,26 @@
+{
+  "name": "git-seance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seance": "node server/index.js",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server/index.js",
+    "test": "node --test server/*.test.js",
+    "test:browser": "node tests/browser.mjs",
+    "doctor": "node scripts/doctor.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "simple-git": "^4.0.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "prettier": "^3.9.10",
+    "vite": "^6.1.0"
+  }
+}
